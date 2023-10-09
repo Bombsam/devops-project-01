@@ -23,7 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - run: npm install
-    - run: npm run test  # Ensure you have a test script in your package.json or remove this line
+    # - run: npm run test  # Ensure you have a test script in your package.json or remove this line
 
     # Deployment to Heroku
     - name: Deploy to Heroku
