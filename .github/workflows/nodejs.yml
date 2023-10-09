@@ -16,7 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
+      with:
+        fetch-depth: 0  # This line is added to fetch the entire repo history
+        
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
